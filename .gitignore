@@ -1,0 +1,121 @@
+# Build outputs
+build/
+*.xcodeproj/
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.out
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+Makefile
+*.cmake
+!*.cmake.in
+CTestTestfile.cmake
+Testing/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+# Logs
+*.log
+logs/
+*.trace
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.pid
+*.seed
+*.pid.lock
+
+# Documentation
+docs/_build/
+*.aux
+*.toc
+*.out
+*.log
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Test outputs
+test_results/
+*.gcda
+*.gcno
+*.gcov
+coverage/
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+*.7z
+
+
+# Project specific
+# Игнорируем сгенерированные тестовые файлы, но не исходные тестовые данные
+!test/*.txt
+test_output_*
+*.test
+*.test.*
+
+# Executables (исключая основные бинарники, но они обычно в build/)
+server/student_server
+client/student_client
+test/student_test
+test/parser_test
+test/manager_test
+test/serializer_test
+test/network_test
+
+# ZeroMQ temporary files (если есть)
+*.ipc
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Profiling data
+*.prof
+gmon.out
+
+# Precompiled headers
+*.gch
+*.pch
+
+
+# Local configuration
+local_config.h
+config.local.h
+.env
+.env.local
+
+# Linux
+.history
+*~
+.cache/
